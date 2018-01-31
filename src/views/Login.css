@@ -1,0 +1,62 @@
+.LoginView {
+    width: 440px;
+    left: 50%;
+    top:50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-shadow: 2px 2px 7px #aeaeae;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+.LoginView .content{
+    padding: 50px 60px 26px;
+    box-sizing: border-box;
+}
+
+.LoginView .login-header{
+    font-size: 24px;
+    margin-bottom:54px;
+}
+
+.LoginView .login-header img{
+    margin-right: 30px;
+    vertical-align: middle;
+}
+
+.LoginView .login-header span{
+    display:inline-block;
+    vertical-align: middle;
+}
+
+.LoginView .pin{
+    width: 100%;
+    margin-top: 10px;
+}
+
+.LoginView .sign-in{
+    width:100%;
+    margin-top:19px;
+}
+
+.LoginView .forgot-pin-text{
+    font-size: 10px;
+    color: #4A4A4A;
+    margin-top: 34px;
+}
+
+.LoginView .copyright{
+    position: absolute;
+    bottom: -31px;
+    font-size: 10px;
+    color: #4A4A4A;
+    transform: translateX(-50%);
+    left: 50%;
+    white-space: nowrap;
+}
+
+.LoginView .decoration{
+    background-color: #4A4A4A;
+    position: absolute;
+    width:50%;
+    height: 5px;
+}

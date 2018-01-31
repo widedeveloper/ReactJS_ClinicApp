@@ -1,0 +1,13 @@
+input, button{
+    display:inline-block;
+    box-sizing: border-box;
+    font-size: 12px;
+    padding: 13px;
+    border: solid 1px #4A4A4A;
+}
+
+button.green{
+    border-color: #42A444;
+    background-color: #24BC27;
+    color: #fff;
+}

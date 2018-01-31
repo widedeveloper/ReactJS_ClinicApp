@@ -1,0 +1,12 @@
+.name-select-list .icon-holder{
+    background-color: #4A4A4A;
+    color:#fff;
+    text-align:center;
+    font-size:16px;
+    font-weight: 600;
+    width: 45px;
+}
+
+.name-select-list .select-list-holder{
+    min-width:124px;
+}

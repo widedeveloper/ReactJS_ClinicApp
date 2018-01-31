@@ -1,0 +1,19 @@
+.date-selector-view{
+    font-size:18px;
+    font-weight: 600;
+}
+
+.date-selector-view > *{
+    vertical-align:middle;
+}
+
+.date-selector-view .arrow{
+    cursor: pointer;
+    margin:0px 10px
+}
+
+.date-selector-view .date-display{
+    min-width: 220px;
+    text-align:center;
+    display:inline-block;
+}

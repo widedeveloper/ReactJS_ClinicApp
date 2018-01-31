@@ -1,0 +1,21 @@
+.appointment-header{
+    background-color: #fff
+}
+.appointment-header > * > * > *{
+    display:inline-block;
+    vertical-align: middle;
+    margin:8px 4px;
+}
+
+.appointment-header > div > div > div{
+    min-width: 240px;
+}
+
+.appointment-header > * > *{
+    white-space: nowrap;
+}
+
+.appointment-header .logo{
+    margin-left: 15px;
+    margin-right: 25px;
+}

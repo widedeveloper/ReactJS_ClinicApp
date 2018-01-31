@@ -1,0 +1,96 @@
+.calendar-view{
+    background-color:#fff;
+    border-top: solid 1px #E1E1E1;
+    margin-left: 70px;
+}
+
+/*.calendar-view *{
+    box-sizing: border-box;
+}*/
+
+.calendar-view .grid-view > * > *{
+    border-bottom: solid 1px #E1E1E1;
+    border-right: solid 1px #E1E1E1;
+    box-sizing: border-box;
+}
+
+.calendar-view .grid-view > * > *{
+    height: 80px;
+}
+
+.calendar-view .timeContainer{
+    width: 50px;
+}
+
+.calendar-view .timeContainer > *{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.calendar-view .time-margin{
+    font-size: 8px;
+    background-color: #fff;
+    border-right: solid 1px #E1E1E1;
+}
+
+.calendar-view .time-margin span {
+    display:block;
+    position:absolute;
+    transform: translate(-50%, -50%);
+    top:0px;
+    left:50%;
+    font-weight: bold;
+}
+
+.calendar-view .date-headers{
+    font-size: 12px;
+    background-color: #fff;
+    height: 40px;
+    font-weight: bold;
+    border-bottom: solid 1px #E1E1E1;
+    border-left: solid 1px #E1E1E1;
+    box-sizing: border-box;
+}
+
+.calendar-view .date-headers .today{
+    color: #0071FA;
+}
+
+
+.calendar-view .interact-zone{
+    position: absolute;
+    top:0px;
+    width: 100%;
+    height: 100%;
+}
+
+.calendar-view .current-time-line {
+    position:absolute;
+    border-top: 1px solid #B2D4FD;
+    top:10px;
+    width: 100%
+}
+
+.calendar-view .current-time-line .dot{
+    width:5px;
+    height:5px;
+    background-color:#B2D4FD;
+    position:absolute;
+    top:-3px;
+    left:-15px;
+    border-radius: 50%;
+}
+
+.calender-item {
+    background-color: blue;
+   /* border-radius: 4px;
+    position: absolute;
+    top: 4px;
+    bottom: 6px;
+    left: 4px;
+    right: 6px;*/
+    color:#fff;
+    font-size: 12px;
+    height:100%
+}
