@@ -7,11 +7,10 @@ import InitialsIcon from './InitialsIcon';
 
 export default class DataSelectList extends ServiceView {
     constructor(props){
-        super(props, props.service)
-        this.updateValue = this.updateValue.bind(this);
-        this.remember = new PersistentData('DataSelectListMemory');
+			super(props, props.service)
+			this.updateValue = this.updateValue.bind(this);
+			this.remember = new PersistentData('DataSelectListMemory');
     }
-
     get memoryId(){
         if(this.props.memoryId){
             return this.props.memoryId;
@@ -72,13 +71,10 @@ export class SelectList extends Select{
             this.state = {};
         }
 
-
-
         if(this.props.memoryId){
 
             this.remember = new PersistentData('SelectListMemory');
-        }    
-        
+        }           
     }
 
     get memoryId(){

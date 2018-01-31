@@ -2,7 +2,7 @@ export class Service{
     constructor(enableCaching, cacheId){
         this.path = "http://bioped-dev.kpd-i.com/services/api/";
         if(enableCaching){
-            this.cache = new ApiCache(cacheId);
+             this.cache = new ApiCache(cacheId);
         }
     }
 
@@ -11,12 +11,12 @@ export class Service{
 
         if(this.cache != null && this.cache.hasCache(api)){
             var json = JSON.parse(this.cache.getCache(api));
-            if (callBack) {
-                callBack(json);
-            } else {
-                console.log(json);
-            }
-            return;
+				if (callBack) {
+					callBack(json);
+				} else {
+					console.log(json);
+				}
+				return;
         }
         
         fetch(url, headers)
@@ -71,22 +71,17 @@ export class ApiCache{
     }
 
     clear(){
-
         let removeKeys = [];
-
-
         for(let i=0; i < this.cache.length; i++){
             let key = this.cache.key(i);
             if(key.indexOf(this.id + '/') === 0){
                 removeKeys.push(key);
             }            
         }
-
         for(let i=0; i < removeKeys.length; i++){
             this.removeCache(removeKeys[i]);
         }
-
-    }
+	}
 }
 
 
@@ -131,7 +126,6 @@ export class PersistentData{
         for(let i=0; i < removeKeys.length; i++){
             this.removeData(removeKeys[i]);
         }
-
     }
 }
 
